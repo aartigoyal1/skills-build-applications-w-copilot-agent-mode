@@ -1,0 +1,30 @@
+/* App.css - Octofit Tracker custom styles */
+.octofit-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.btn-primary, .btn-outline-light {
+  margin-left: 0.5rem;
+}
+
+.heading {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin-top: 2rem;
+}
