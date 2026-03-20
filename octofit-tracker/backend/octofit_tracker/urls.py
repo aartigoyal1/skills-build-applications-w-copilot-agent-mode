@@ -35,8 +35,15 @@ def landing_page(request):
 def api_root(request):
     return JsonResponse({'message': 'Octofit API Root'})
 
+
 from rest_framework.routers import DefaultRouter
+from .views import UserProfileViewSet, TeamViewSet, ActivityViewSet, WorkoutViewSet, LeaderboardViewSet
 router = DefaultRouter()
+router.register(r'users', UserProfileViewSet, basename='user')
+router.register(r'teams', TeamViewSet, basename='team')
+router.register(r'activities', ActivityViewSet, basename='activity')
+router.register(r'workouts', WorkoutViewSet, basename='workout')
+router.register(r'leaderboard', LeaderboardViewSet, basename='leaderboard')
 
 urlpatterns = [
     path('', landing_page, name='landing-page'),
